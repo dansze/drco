@@ -1,3 +1,12 @@
-app-filter, #main {
-    height: 100%
+#main {
+    height: 96%;
+}
+
+#nav {
+    height: 4%;
+}
+
+app-display {
+    height: 100%;
+    overflow-y: scroll;
 }

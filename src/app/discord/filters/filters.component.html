@@ -1,6 +1,6 @@
 <h4 class="text-center text-light">Filters</h4>
 <div *ngFor="let filter of filters; index as i" class="row no-gutters mb-2">
-   <button (click)="removeFilter(i)" class="btn btn-muted col-1" [octicon]="'x'" width="1.1em"></button>
+   <button (click)="removeFilter(i)" class="btn btn-muted col-1 text-light" [octicon]="'x'" width="1.1em"></button>
    <app-filter [filter]="filter" (change)="updateFilter($event)" class="col-11"></app-filter>
 </div>
-<button (click)="addFilter()" class="btn btn-muted float-right" [octicon]="'plus'" width="1.1em"></button>
+<button (click)="addFilter()" class="btn btn-muted float-right text-light" [octicon]="'plus'" width="1.1em"></button>
