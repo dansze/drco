@@ -4,7 +4,7 @@ import { DiscordClientService } from '../discord-client.service';
 @Component({
   selector: 'app-connect',
   templateUrl: './connect.component.html',
-  styleUrls: ['./connect.component.css']
+  styleUrls: ['./connect.component.scss']
 })
 export class ConnectComponent implements OnInit {
   

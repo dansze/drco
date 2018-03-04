@@ -4,7 +4,7 @@ import { DiscordClientService } from '../discord-client.service';
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.css']
+  styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent {
 
@@ -40,6 +40,12 @@ export class FilterComponent {
   changeField() {
     this.refreshValueOptions();
     this.filter.values = [];
+    this.selected = undefined;
+    this.filter.op = undefined;
+    this.update();
+  }
+
+  changeOp() {
     this.update();
   }
 

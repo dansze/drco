@@ -4,7 +4,7 @@ import { DiscordClientService } from '../discord-client.service';
 @Component({
   selector: 'app-display',
   templateUrl: './display.component.html',
-  styleUrls: ['./display.component.css']
+  styleUrls: ['./display.component.scss']
 })
 export class DisplayComponent{
 

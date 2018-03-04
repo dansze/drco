@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+$theme-colors: (
+  "primary": #7289DA,
+  "light": #99AAB5,
+  "secondary": #2C2F33,
+  "dark": #23272A,
+  "muted": #3f4146
+);
+
+html, body, app-root {
+    height: 100%;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
