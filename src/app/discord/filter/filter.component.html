@@ -1,0 +1,24 @@
+<div class="row no-gutters">
+  <div class="form-group col-6">
+    <select class="custom-select" [(ngModel)]="filter.field" name="field" (change)="changeField()">
+      <option *ngFor="let opt of Object.keys(client.filterInfo)" [value]="opt">{{opt}}</option>
+    </select>
+  </div>
+  <div class="form-group col-6">
+    <select class="custom-select" [(ngModel)]="filter.op" name="op" [disabled]="!filter.field" (change)="update()">
+      <option *ngFor="let opt of operatorOptions" [value]="opt">{{opt}}</option>
+    </select>
+  </div>
+</div>
+<span class="badge badge-secondary" *ngFor="let value of filter.values; index as i">
+  {{client.filterInfo[filter.field].valueName(value)}}
+  <a (click)="removeValue(i)" [octicon]="'x'"></a>
+</span>
+<div class="row no-gutters">
+  <select class="custom-select col-11" [disabled]="!filter.op" [(ngModel)]="selected" name="value">
+    <option *ngFor="let opt of valueOptions" [ngValue]="opt">{{client.filterInfo[filter.field].valueName(opt)}}</option>
+  </select>
+  <div class="col-1">
+    <button class="btn" (click)="addValue()" [octicon]="'plus'"></button>
+  </div>
+</div>

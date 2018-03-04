@@ -1,0 +1,6 @@
+Filters
+<div *ngFor="let filter of filters; index as i" class="row no-gutters">
+   <a (click)="removeFilter(i)" class="btn col-1" [octicon]="'x'"></a>
+   <app-filter [filter]="filter" (change)="updateFilter($event)" class="col-11"></app-filter>
+</div>
+<button (click)="addFilter()" class="btn" [octicon]="'plus'"></button>
