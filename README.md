@@ -1,27 +1,25 @@
-# DrcoFront
+# Drco
+ 
+ Discord Remote COntroll is a one stop shop for controlling and debuggind Discord bots, right from your browser.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+## Features
 
-## Development server
+### Filtering (80%)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Filter through all the messages your bot gets to see what it sees.
 
-## Code scaffolding
+#### Progress
+More or less working, with the exception of filtering by indirect mentions.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Chatting (20%)
 
-## Build
+Take direct control of your bot and sent whatever messages you need.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+#### Progress
+The groundwork is there, but some testing needs to be done regarding self-DMs on bots before I decide which way to take this feature.
 
-## Running unit tests
+### Other Features, Present and Future
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* self-DM private api
+* persistent logging
+* Proper Discord-like interface
